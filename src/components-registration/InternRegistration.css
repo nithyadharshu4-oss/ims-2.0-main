@@ -1,0 +1,401 @@
+.ims-reg-page {
+  width: 100%;
+  max-width: 1920px;
+  background: linear-gradient(to left, #FFFFFF 40%, #566B94 93%);
+  
+  display: flex;
+  padding: 20px;
+  gap: 40px;
+ 
+}
+
+.ims-reg-left {
+  display: flex;
+  flex-direction: column;
+  width: 40%; 
+  justify-content: flex-start;
+  color: #fff;
+  padding: 20px;
+}
+
+.ims-reg-title {
+  margin: 0;
+  font-size: 26px;
+  color: #ffff;
+}
+
+.ims-reg-lead {
+  margin: 18px 0 0;
+  font-size: 12px;
+  color: #ffff;
+}
+
+
+
+.ims-reg-art {
+  width: auto;
+  height: 300px;
+}
+
+.ims-reg-features {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  
+}
+
+.ims-reg-avatar-img {
+  display: flex;
+  width: 20px;
+  height: auto;
+  margin-top: 6px;
+  object-fit: contain;
+  object-position: center top;
+}
+
+
+
+.ims-reg-quote-by {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.ims-reg-feature {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+
+  padding: 10px;
+  border-radius: 12px;
+  background: #e2e6ec;
+  color: #132a56;
+}
+
+.ims-reg-break {
+  display: flex;
+  width: 100%;
+  height: 0;
+}
+
+.ims-reg-feature-icon {
+  display: flex;
+  width: 24px;
+  height: auto;
+}
+
+.ims-reg-feature-copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.ims-reg-feature-title,
+.ims-reg-feature-text {
+  display: flex;
+}
+
+.ims-reg-feature-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+  vertical-align: middle;
+  color: #132a56;
+}
+
+.ims-reg-feature-text {
+  margin-top: 3px;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+  color: #111112;
+}
+
+.ims-reg-features {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+
+
+
+.ims-reg-quote-name {
+  font-size: 12px;
+  color: #fff;
+}
+
+.ims-reg-form {
+  gap: 20px;
+  align-content: center;
+  justify-content: center;
+  width: 60%;
+ 
+}
+
+.ims-reg-heading {
+  margin: 0;
+  font-size: 24px;
+  color: #132a56;
+}
+
+.ims-reg-sub {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: #777587;
+}
+
+.ims-reg-label,
+.ims-reg-required {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.ims-reg-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+  color: #111c2d;
+}
+
+.ims-reg-required {
+  color: #e11d48;
+}
+
+.ims-reg-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ims-reg-input,
+.ims-reg-select-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  padding: 0 14px;
+  border: 1px solid #d5dbe3;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  color: #111c2d;
+  outline: none;
+}
+
+.ims-reg-input::placeholder,
+.ims-reg-upload-text {
+  color: #777587;
+}
+
+.ims-reg-input:focus,
+.ims-reg-select-input:focus {
+  border-color: #12275a;
+}
+
+.ims-reg-phone,
+.ims-reg-password,
+.ims-reg-email {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  border: 1px solid #d5dbe3;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.ims-reg-phone-code {
+  padding: 0 12px;
+  border-right: 1px solid #e5e7eb;
+  font-size: 16px;
+  color: #777587;
+}
+
+.ims-reg-phone .ims-reg-input,
+.ims-reg-password .ims-reg-input,
+.ims-reg-email .ims-reg-input {
+ 
+  min-width: 0;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+}
+
+.ims-reg-phone:focus-within,
+.ims-reg-password:focus-within,
+.ims-reg-email:focus-within {
+  border-color: #12275a;
+}
+
+.ims-reg-verify {
+  flex-shrink: 0;
+  height: 26px;
+  margin-right: 8px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 6px;
+  background: #12275a;
+  font-size: 12px;
+  line-height: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ims-reg-verified {
+  background: #16803c;
+}
+
+.ims-reg-password button {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.ims-reg-eye-open,
+.ims-reg-eye-shut {
+  grid-area: 1 / 1;
+  width: 22px;
+  height: 22px;
+}
+
+.ims-reg-eye-open {
+  object-fit: contain;
+}
+
+.ims-reg-eye-shut {
+  display: none;
+  background: url('../assets/Login/Eye shut.png') center / contain no-repeat;
+}
+
+.ims-reg-eye-closed .ims-reg-eye-shut {
+  display: block;
+}
+
+.ims-reg-chevron,
+.ims-reg-file {
+  display: none;
+}
+
+.ims-reg-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  border: 1px dashed #7dd3fc;
+  border-radius: 8px;
+  background: #f8fbff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #777587;
+  cursor: pointer;
+}
+
+.ims-reg-agree {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777587;
+  cursor: pointer;
+}
+
+.ims-reg-checkbox {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.ims-reg-link,
+.ims-reg-signin-btn {
+  font-size: 16px;
+  line-height: 24px;
+  color: #176789;
+}
+
+.ims-reg-link {
+  text-decoration: none;
+}
+
+.ims-reg-signin-btn {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.ims-reg-submit {
+  width: 100%;
+  height: 45px;
+  margin-top: 24px;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 8px;
+  background: #12275a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ims-reg-or,
+.ims-reg-signin {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777587;
+}
+
+.ims-reg-or-text {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #64748b;
+}
+
+.ims-reg-error {
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #e11d48;
+}
+
+.ims-reg-invalid > .ims-reg-input,
+.ims-reg-invalid .ims-reg-select-input,
+.ims-reg-invalid .ims-reg-email,
+.ims-reg-invalid .ims-reg-phone,
+.ims-reg-invalid .ims-reg-password,
+.ims-reg-invalid .ims-reg-upload {
+  border-color: #e11d48;
+}
+
+
+@media (width:1220){
+  .ims-reg-page {
+  height: 100vh;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: 100vh; 
+}
+   
+.ims-reg-art {
+  width: auto;
+  height: 400px;
+}
+ 
+}
