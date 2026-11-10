@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './InternRegistration.css';
+
 import illustration from '../assets/registration/Intern-Illustration.png';
 import verifiedIcon from '../assets/registration/Verified.png';
 import trackingIcon from '../assets/registration/Tracking.png';
 import avatar from '../assets/registration/Avatar.png';
 import eye from '../assets/registration/eye.png';
+import eyeclose from "../assets/registration/eyeclose.png";
 
 import { Header } from '../reusable-components/Header';
 import RegistrationVerificationPopup from '../reusable-components/RegistrationVerificationPopup';
@@ -241,14 +243,15 @@ export const InternRegistration = ()=> {
                   clearError('email');
                 }}
               />
-              <button
+            {email.trim() && (
+                <button
                 type="button"
-                className={emailVerified ? 'ims-reg-verify ims-reg-verified' : 'ims-reg-verify'}
-
+               className={emailVerified ? 'ims-reg-verify ims-reg-verified' : 'ims-reg-verify'}
                 onClick={() => handleVerify('email')}
-              >
+               >
                 {emailVerified ? 'Verified' : 'Verify'}
-              </button>
+               </button>
+)}
             </div>
             {errors.email && <p className="ims-reg-error">{errors.email}</p>}
           </div>
@@ -270,14 +273,15 @@ export const InternRegistration = ()=> {
                   clearError('phone');
                 }}
               />
-              <button
-                type="button"
-                className={phoneVerified ? 'ims-reg-verify ims-reg-verified' : 'ims-reg-verify'}
-
-                onClick={() => handleVerify('phone')}
-              >
-                {phoneVerified ? 'Verified' : 'Verify'}
-              </button>
+            {phone.trim() && (
+            <button
+            type="button"
+            className={phoneVerified ? 'ims-reg-verify ims-reg-verified' : 'ims-reg-verify'}
+            onClick={() => handleVerify('phone')}
+           >
+           {phoneVerified ? 'Verified' : 'Verify'}
+           </button>
+)}
             </div>
             {errors.phone && <p className="ims-reg-error">{errors.phone}</p>}
           </div>
@@ -405,7 +409,7 @@ export const InternRegistration = ()=> {
                 aria-label={showPassword ? 'Hide password' : 'Show password'}
                 onClick={() => setShowPassword((visible) => !visible)}
               >
-                <img className="ims-reg-eye-open" src={eye} alt="" />
+                <img className="ims-reg-eye-open" src={showPassword ? eye: eyeclose} alt="" />
                 <span className="ims-reg-eye-shut" />
               </button>
             </div>
@@ -433,7 +437,8 @@ export const InternRegistration = ()=> {
                 aria-label={showConfirmPassword ? 'Hide password' : 'Show password'}
                 onClick={() => setShowConfirmPassword((visible) => !visible)}
               >
-                <img className="ims-reg-eye-open" src={eye} alt="" />
+                <img className="ims-reg-eye-open" src={showConfirmPassword ? eye: eyeclose
+ } alt="" />
                 <span className="ims-reg-eye-shut" />
               </button>
             </div>

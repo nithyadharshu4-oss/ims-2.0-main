@@ -219,18 +219,14 @@
 .ims-reg-phone .ims-reg-input,
 .ims-reg-password .ims-reg-input,
 .ims-reg-email .ims-reg-input {
- 
+
   min-width: 0;
   height: 100%;
   border: 0;
   border-radius: 0;
 }
 
-.ims-reg-phone:focus-within,
-.ims-reg-password:focus-within,
-.ims-reg-email:focus-within {
-  border-color: #12275a;
-}
+
 
 .ims-reg-verify {
   flex-shrink: 0;
